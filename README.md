@@ -7,3 +7,4 @@ It uses the python file to generate logs of the website, analyzing logs by **Spa
 finally using **Sping boot** to create a simple HTML to show the data. Data is visualized to view more easily.
   
 The  flow of the program is as follows：
+ ![Alt](/pictures/website_traffic.PNG#pic_center)
