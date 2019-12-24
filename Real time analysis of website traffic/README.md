@@ -1,8 +1,8 @@
 This demo is expansion of [spark-streaming-flume-kafka-integration](https://github.com/XiaoQQin/spark_streaming-flume-kafka-integration).
 Compared to before, it stores the data in the **Hbase** and uses **Spring boot** for visualization.  
-![p_1](../pictures/website_traffic_2.PNG#pic_center)  
+![p_1](../pictures/website_traffic_3.png#pic_center)  
 
-![p_2](../pictures/website_traffic_3.png#pic_center)
+![p_2](../pictures/website_traffic_2.PNG#pic_center)
 
 ## version
 apache-flume-1.7.0  
