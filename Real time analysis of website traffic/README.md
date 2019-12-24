@@ -1,5 +1,8 @@
 This demo is expansion of [spark-streaming-flume-kafka-integration](https://github.com/XiaoQQin/spark_streaming-flume-kafka-integration).
-Compared to before, it stores the data in the **Hbase** and uses **Spring boot** for visualization.
+Compared to before, it stores the data in the **Hbase** and uses **Spring boot** for visualization.  
+![p_1](../pictures/website_traffic_2.PNG#pic_center)  
+
+![p_2](../pictures/website_traffic_3.PNG#pic_center)
 
 ## version
 apache-flume-1.7.0  
@@ -82,4 +85,4 @@ jquery-3.4.1
     ```
  7. start WebApplication 
     start **WebApplication.java** in Spring boot dir to for data visualization.
-    you can visit the 'localgits:'
+    Finally you can visit the 'localhost:8080/echarts' to see the result as the pictures showed
