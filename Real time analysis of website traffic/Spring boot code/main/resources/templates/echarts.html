@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    这是echarts返回的页面
+
     <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
     <div style="width: 1000px;height:1500px;position: absolute;top:50%;left: 50%;margin-top: -200px;margin-left: -300px">
     <div id="CourseClickCount" style="width: 800px;height:600px;"></div>
@@ -34,8 +34,8 @@
 
         var option = {
             title : {
-                text: '某站点用户访问来源',
-                subtext: '纯属虚构',
+                text: 'Distribution of courses visited by users on a website',
+                subtext: 'Pure fiction',
                 x:'center'
             },
             tooltip : {
@@ -49,7 +49,7 @@
             },
             series : [
                 {
-                    name: '访问来源',
+                    name: 'Course distribution',
                     type: 'pie',
                     radius : '55%',
                     center: ['50%', '60%'],

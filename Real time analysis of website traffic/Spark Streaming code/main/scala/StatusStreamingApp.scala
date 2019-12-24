@@ -13,7 +13,7 @@ import scala.collection.mutable.ListBuffer
 
 object StatusStreamingApp {
   def main(args: Array[String]): Unit = {
-    val sparkConf: SparkConf = new SparkConf().setMaster("local[2]").setAppName("KafkaWordCount")
+    val sparkConf: SparkConf = new SparkConf().setMaster("local[2]").setAppName("StatusStreamingApp")
 
     val ssc = new StreamingContext(sparkConf,Seconds(60))
     val kafkaParams = Map[String, Object](
