@@ -5,11 +5,9 @@ import com.learn.spark.domain.CourseClickCount;
 
 
 import com.learn.spark.domain.CourseSearchClickCount;
+import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
@@ -27,9 +25,10 @@ public class StartApp {
 
     @RequestMapping(value="/course_clickcount_dynamic",method = RequestMethod.POST)
     @ResponseBody
-    public List<CourseClickCount> courseClickCount()throws Exception{
+    public List<CourseClickCount> courseClickCount(@RequestBody JSONObject params)throws Exception{
+        String datetime=params.getString("datetime");
 
-        List<CourseClickCount> list = courseClickCountDao.quaryCourseClickCount("20191220");
+        List<CourseClickCount> list = courseClickCountDao.quaryCourseClickCount(datetime);
 
         return  list;
     }
@@ -37,9 +36,9 @@ public class StartApp {
 
     @RequestMapping(value="/course_search_clickcount_dynamic",method = RequestMethod.POST)
     @ResponseBody
-    public List<CourseSearchClickCount> courseSearchClickCount()throws Exception{
-
-        List<CourseSearchClickCount> courseSearchClickCounts = courseClickCountDao.quarySearchCourseClickCount("20191220");
+    public List<CourseSearchClickCount> courseSearchClickCount(@RequestBody JSONObject params)throws Exception{
+        String datetime=params.getString("datetime");
+        List<CourseSearchClickCount> courseSearchClickCounts = courseClickCountDao.quarySearchCourseClickCount(datetime);
 
         return  courseSearchClickCounts;
     }
