@@ -16,3 +16,6 @@ You can see [Real time analysis of website traffic](https://github.com/XiaoQQin/
 This demo simulates the analysis of e-commerce website data. The website data is divided into local data and real-time data,using **spark core** and **spark streaming** to analyze them respectively.Finally, the result is stored into **mysql**.
   
 The  flow of the program is as follows：
+![Alt](/pictures/e_commerce.PNG)
+
+You can see [e_commerce date analysis](https://github.com/XiaoQQin/Spark-Porjects/tree/master/e_commerce) for more detail
